@@ -19,8 +19,130 @@
   }
 }
 
-body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+header {
+  display: flex;
+  align-items: center;
+}
+
+#pause,
+#profile,
+#dash,
+#dash2 {
+  background: linear-gradient(90deg,
+      #12C9B2 0%,
+      #2B95FF 48%,
+      #F6D94B 100%);
+}
+
+
+
+#navbar button {
+  @apply rounded-xl h-[2.8rem] text-left pl-3 mt-3
+}
+
+
+#navbar button:hover {
+  @apply bg-blue-200;
+}
+
+#new:hover {
+  @apply bg-blue-200 border-solid border-1 border-blue-300 delay-150
+}
+
+#new2:hover {
+  @apply bg-blue-200 border-solid border-1 border-blue-300 delay-150
+}
+
+#clear:hover {
+  @apply bg-blue-200
+}
+
+.graphs div {
+  @apply shadow-cyan-200/50 shadow-lg rounded-2xl
+}
+
+#dash {
+  height: 3rem;
+  text-align: center;
+  color: white;
+  border-radius: 12px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.12);
+  font-weight: 600;
+}
+
+#dash2 {
+  height: 2.5rem;
+  text-align: center;
+  color: white;
+  border-radius: 12px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.12);
+  font-weight: 600;
+}
+
+#sect {
+  @apply border-solid border-2 rounded-2xl p-3 shadow-cyan-200/50 shadow-lg border-stone-200
+}
+
+#sect h1 {
+  @apply text-3xl
+}
+
+#sect p {
+  @apply text-blue-400 text-base
+}
+
+@media (min-width:1024px) {
+  main {
+    @apply m-1
+  }
+
+  #new2 {
+    @apply mr-6 ml-3
+  }
+
+  #dash2 {
+    @apply mr-15
+  }
+}
+
+@media (min-width: 768px) {
+  .vars {
+    @apply mt-5 flex justify-between h-25
+  }
+
+  .forecast {
+    @apply flex justify-evenly
+  }
+
+  .chart {
+    @apply w-320
+  }
+
+  #sect {
+    @apply w-2/7
+  }
+
+  .graphs {
+    @apply flex justify-between
+  }
+
+  .graphs div {
+    @apply w-2/7
+  }
+
+  .extra {
+    @apply block
+  }
+
+  #menu {
+    @apply hidden
+  }
+
+  #clear:hover {
+    @apply bg-blue-200
+  }
+
+  #dash2, #new2 {
+    @apply block
+  }
 }
