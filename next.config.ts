@@ -1,7 +1,10 @@
-import type { NextConfig } from "next";
+// next.config.js
+const isProd = process.env.NODE_ENV === 'production'
 
-const nextConfig: NextConfig = {
-  /* config options here */
-};
-
-export default nextConfig;
+module.exports = {
+  basePath: isProd ? '/<AI-Climate-monitoring_Landing-page>' : '',
+  assetPrefix: isProd ? '/<AI-Climate-monitoring_Landing-page>/' : '',
+  images: {
+    unoptimized: true, // disables Image Optimization (not supported on GH Pages)
+  },
+}
