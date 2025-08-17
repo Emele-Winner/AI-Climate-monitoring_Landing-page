@@ -9,6 +9,7 @@ const nextConfig: NextConfig = {
   reactStrictMode: true,
   images: {
     unoptimized: true, // Optional: Use this if you're hosting images statically
+
   },
 };
 
