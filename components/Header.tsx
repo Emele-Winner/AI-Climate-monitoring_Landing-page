@@ -26,6 +26,7 @@ export default function Header() {
                             alt="night_mode"
                             width={50}
                             height={50}
+                            unoptimized
                         />
                         <div
                             onClick={() => setIsActive(!isActive)}>
@@ -36,6 +37,7 @@ export default function Header() {
                                 alt="A menu icon"
                                 width={50}
                                 height={50}
+                                unoptimized
                             />
                         </div>
                         <div className="flex items-center">
@@ -58,6 +60,7 @@ export default function Header() {
                         alt="A menu icon"
                         width={30}
                         height={30}
+                        unoptimized
                     />
                 </div>
                 <button onClick={() => setIsActive(!isActive)}><Link href="/Dashboard">Dashboard</Link></button>

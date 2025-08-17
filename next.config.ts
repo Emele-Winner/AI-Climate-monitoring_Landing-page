@@ -2,8 +2,8 @@
 import type { NextConfig } from 'next';
 
 const nextConfig: NextConfig = {
-  assetPrefix: process.env.NODE_ENV === 'production' ? '/your-repo/' : '', // Replace 'your-repo'
-  basePath: process.env.NODE_ENV === 'production' ? '/your-repo' : '', // Replace 'your-repo'
+  assetPrefix: process.env.NODE_ENV === 'production' ? '/AI-Climate-monitoring_Landing-page/' : '', // Replace 'your-repo'
+  basePath: process.env.NODE_ENV === 'production' ? '/AI-Climate-monitoring_Landing-page' : '', // Replace 'your-repo'
   images: {
     unoptimized: true, // Disable Next.js image optimization for GitHub Pages
   },
