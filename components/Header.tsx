@@ -22,7 +22,7 @@ export default function Header() {
                         <Image
                             className="mr-2 rounded-xl  border-stone-200 p-2"
                             id="theme"
-                            src="/images/last_quarter.svg"
+                            src="/last_quarter.svg"
                             alt="night_mode"
                             width={50}
                             height={50}
@@ -32,7 +32,7 @@ export default function Header() {
                             <Image
                                 className="rounded-xl border-stone-200 p-2 "
                                 id="menu"
-                                src="/images/align_justify.svg"
+                                src="/align_justify.svg"
                                 alt="A menu icon"
                                 width={50}
                                 height={50}
@@ -54,7 +54,7 @@ export default function Header() {
                     <Image
                         className="rounded-4xl ml-auto mt-2"
                         id="menu"
-                        src="/images/cancel.svg"
+                        src="/cancel.svg"
                         alt="A menu icon"
                         width={30}
                         height={30}

@@ -1,8 +1,12 @@
-// next.config.js
-const isProd = process.env.NODE_ENV === 'production'
+// filepath: next.config.ts
+import type { NextConfig } from 'next';
 
-module.exports = {
+const nextConfig: NextConfig = {
+  assetPrefix: process.env.NODE_ENV === 'production' ? '/your-repo/' : '', // Replace 'your-repo'
+  basePath: process.env.NODE_ENV === 'production' ? '/your-repo' : '', // Replace 'your-repo'
   images: {
-    unoptimized: true, // disables Image Optimization (not supported on GH Pages)
+    unoptimized: true, // Disable Next.js image optimization for GitHub Pages
   },
-}
+};
+
+export default nextConfig;
